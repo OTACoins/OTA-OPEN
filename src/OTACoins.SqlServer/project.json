@@ -1,0 +1,39 @@
+﻿{
+  "version": "0.7.0-*",
+  "description": "SQL Server implementation of the OTACoins storage layer.",
+  "authors": [ "Flavien Charlon" ],
+  "copyright": "Copyright \u00A9 2015 Coinprism, Inc.",
+
+  "packOptions": {
+    "owners": [ "Coinprism" ],
+    "projectUrl": "https://www.OTACoins.org/",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "iconUrl": "https://www.OTACoins.org/package.png"
+  },
+
+  "buildOptions": {
+    "allowUnsafe": false,
+    "warningsAsErrors": true
+  },
+
+  "dependencies": {
+    "OTACoins.Infrastructure": "0.7.0"
+  },
+
+  "frameworks": {
+    "netstandard1.3": {
+      "dependencies": {
+        "System.Data.Common": "4.3.0",
+        "System.Data.SqlClient": "4.3.0"
+      }
+    },
+
+    "net451": {
+      "frameworkAssemblies": {
+        "System.Collections": "4.0.0.0",
+        "System.Data": "4.0.0.0",
+        "System.Threading.Tasks": "4.0.0.0"
+      }
+    }
+  }
+}
